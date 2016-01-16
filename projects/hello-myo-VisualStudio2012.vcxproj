@@ -22,6 +22,7 @@
     <ProjectGuid>{182987B5-A3A5-4847-98A9-0F4079B1A86C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <ProjectName>GestTracker</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -62,7 +63,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>hello-myo</TargetName>
+    <TargetName>gest-tracker</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -88,7 +89,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>myo64.lib</AdditionalDependencies>
+      <AdditionalDependencies>myo64.lib;ws2_32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
@@ -163,7 +164,13 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GestTracker.cpp" />
+    <ClCompile Include="GestureListener.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GestureListener.h" />
+    <ClInclude Include="Server.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

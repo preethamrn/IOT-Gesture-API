@@ -1,15 +1,2 @@
-﻿Build started 1/15/2016 11:34:25 PM.
-     1>Project "E:\Programming\Hackathon\libraries\myo\myo-sdk-win-0.9.0\samples\hello-myo-VisualStudio2012.vcxproj" on node 2 (Build target(s)).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (emg-data-sample-VisualStudio2012.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-     1>Link:
-         hello-myo-VisualStudio2012.vcxproj -> E:\Programming\Hackathon\libraries\myo\myo-sdk-win-0.9.0\samples\x64\Debug\hello-myo.exe
-       PostBuildEvent:
-         COPY "..\bin\myo64.dll" "E:\Programming\Hackathon\libraries\myo\myo-sdk-win-0.9.0\samples\x64\Debug\"
-               
-         :VCEnd
-                 1 file(s) copied.
-     1>Done Building Project "E:\Programming\Hackathon\libraries\myo\myo-sdk-win-0.9.0\samples\hello-myo-VisualStudio2012.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.06
+﻿  hello-myo-VisualStudio2012.vcxproj -> F:\Zhouball\Desktop\IdeaHacks\iot-gesture-api\IOT-Gesture-API\projects\x64\Debug\gest-tracker.exe
+          1 file(s) copied.
