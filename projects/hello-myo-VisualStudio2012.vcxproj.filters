@@ -9,18 +9,12 @@
     <ClCompile Include="GestureListener.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="Server.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GestureListener.h">
-      <Filter>source</Filter>
-    </ClInclude>
-    <ClInclude Include="Server.h">
       <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>
